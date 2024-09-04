@@ -1,0 +1,237 @@
+/* Fijamos unas variables para poder usar mas facilmente los distintos tipos de texto y colores*/
+
+:root{
+/* Definimos variables para los colores*/
+    --color-primary: #ffffff; /* Color primario blanco*/
+    --color-secondary: #9f9f23; /* Color secundario claro*/
+    --color-accent: #1e1e07; /* Color oscuro*/
+
+/* Definimos variables para tipografias*/
+    --font-family-main: 'jura', sans-serif; /* Familia de fuente principal */
+    --font-family-heading: 'Exo', sans-serif; /* Familia de fuente para encabezados */
+    --font-size-base: 16px; /* Tamaño base de fuente */
+
+/* Definir variables para el peso de la fuente */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.marginContainer {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 10px;  /*Ajusta el valor según sea necesario*/
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Altura del 100% de la ventana */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide la pantalla en dos columnas de igual ancho */
+    gap: 50px; /* Espacio entre las columnas */
+}
+
+
+.left-section {
+    padding: 20px; /* Añade un espacio alrededor del logotipo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.right-section {
+    padding: 20px; /* Añade un espacio alrededor del formulario de inicio de sesión */
+
+}
+
+}
+.containerNav {
+    display: flex;
+    min-height: 70px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding: 20 10px;
+    justify-content: center;
+}
+
+.mainNav {
+    display: flex;
+}
+
+
+.titleMain {
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-bold);
+
+}
+
+.cardNav-container {
+    margin: 0 auto; /* Margen automático a los lados para centrarlo horizontalmente */
+    max-width: 1200px; /* Ancho máximo para evitar que ocupe to do el ancho */
+}
+.cardNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide el espacio en tres columnas de igual tamaño */
+    gap: 30px; /* Espacio entre las columnas */
+    padding: 25px 0; /* Relleno superior e inferior */
+}
+
+.logContent {
+    text-align: center;
+}
+
+.logInput {
+    display: flex;
+    justify-content: center;
+}
+.crearContent {
+    text-align: center;
+}
+
+.crearInput {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+}
+
+.formRegister {
+    text-align: center!important;
+}
+
+.form-control {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 60%;
+}
+
+.registerDiv {
+    text-align: center;
+}
+
+.linkContent {
+    margin: 0 20px;
+}
+
+.mainLink {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.anchorLink {
+    color: black;
+    text-decoration: none;
+}
+
+.anchorLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+.botonCrear {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--color-accent); /* Cambia el color de fondo del boton */
+    color: white; /* Cambia el color del texto a blanco para que contraste */
+    font-family: var(--font-family-heading); /* Cambia la fuente del texto */
+    font-weight: var(--font-weight-bold);
+}
+.botonLogin {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--color-accent); /* Cambia el color de fondo del boton */
+    color: white; /* Cambia el color del texto a blanco para que contraste */
+    font-family: var(--font-family-heading); /* Cambia la fuente del texto */
+    font-weight: var(--font-weight-bold);
+}
+.buttonCrearCont {
+    text-align: center;
+}
+.errorCrear {
+    color: red;
+    text-align: center;
+}
+.errorDiv {
+    height: 40px;
+}
+
+.card {
+    width: 20rem;
+    border-radius: 1rem!important;
+}
+
+.productImg {
+    height: 270px!important;
+    border-radius: 1rem;
+}
+
+.card-title {
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-button {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .cardNav {
+        display: block;
+    }
+    .card {
+        margin: 20px auto;
+    }
+}
+
+.errorRegister {
+    color: red;
+}
+
+.correctRegistrationProviderDiv {
+    text-align: center;
+}
+
+.correctRegistrationProvider {
+    color: green;
+}
+
+.anchorLinkBack {
+    color: white;
+    text-decoration: none;
+}
+
+.anchorLinkBack:hover {
+    color: white;
+}
+.logo {
+    height: 300px;
+    border-radius: 10%; /* Hace que la imagen sea circular *
+}

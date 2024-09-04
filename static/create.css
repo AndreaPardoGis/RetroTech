@@ -1,0 +1,161 @@
+/* Fijamos unas variables para poder usar mas facilmente los distintos tipos de texto y colores*/
+
+:root{
+/* Definimos variables para los colores*/
+    --color-primary: #ffffff; /* Color primario blanco*/
+    --color-secondary: #9f9f23; /* Color secundario claro*/
+    --color-accent: #1e1e07; /* Color oscuro*/
+
+/* Definimos variables para tipografias*/
+    --font-family-main: 'jura', sans-serif; /* Familia de fuente principal */
+    --font-family-heading: 'Exo', sans-serif; /* Familia de fuente para encabezados */
+    --font-size-base: 16px; /* Tamaño base de fuente */
+
+/* Definir variables para el peso de la fuente */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+
+header {
+    margin: 0;
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+body {
+    margin: 0;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.marginContainer {
+    max-width: 90%;
+    margin: auto;
+    border-radius: 1rem!important;
+    background-color: var(--color-secondary);
+}
+
+.containerNav {
+    display: flex;
+    min-height: 80px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 10px 10;
+    padding: 0 10px;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+}
+
+.textPosition {
+    margin: auto 0;
+}
+
+.centerNav {
+    display: flex;
+}
+
+.rightNav {
+    display: flex;
+}
+
+.mainLink {
+    margin: 0;
+}
+
+.firstLink {
+    margin: 0 0 20px 10px;
+}
+
+.secondLink {
+    margin: 0 0 0 10px;
+}
+
+.anchorLink {
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+
+.anchorLink:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.crearContent {
+    text-align: center;
+}
+
+.crearInput {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 30%;
+}
+
+.inputImg {
+    margin: 10px 10px;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.buttonCrearCont {
+    text-align: center;
+}
+
+.botonCrear {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--color-accent); /* Cambia el color de fondo del boton */
+    color: white; /* Cambia el color del texto a blanco para que contraste */
+    font-family: var(--font-family-heading); /* Cambia la fuente del texto */
+    font-weight: var(--font-weight-bold);
+}
+
+.errorCrear {
+    color: red;
+    text-align: center;
+}
+
+.anchorLinkBack {
+    color: white;
+    text-decoration: none;
+}
+
+.anchorLinkBack:hover {
+    color: white;
+}
+
+.logInput {
+    display: flex;
+    justify-content: center;
+}
+
+.form-select {
+    max-width: 30%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.logo {
+    height: 140px;
+    width: 380px;
+    margin-left: -100px;
+}
